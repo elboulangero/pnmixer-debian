@@ -1,0 +1,24 @@
+Source: pnmixer
+Section: sound
+Priority: optional
+Maintainer: Arnaud Rebillout <elboulangero@gmail.com>
+Build-Depends: debhelper (>= 9), dh-autoreconf, pkg-config, intltool,
+ libasound2-dev, libglib2.0-dev, libgtk-3-dev (>= 3.12), libnotify-dev, libx11-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/nicklan/pnmixer
+Vcs-Git: https://anonscm.debian.org/collab-maint/pnmixer.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/pnmixer.git;a=summary
+
+Package: pnmixer
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Simple mixer application for system tray
+ PNMixer is a simple mixer application designed to run in your system tray.
+ It integrates nicely into desktop environments that don't have a panel that
+ supports applets and therefore can't run a mixer applet. In particular it's
+ been used quite a lot with fbpanel and tint2, but should run fine in any
+ system tray.
+ .
+ PNMixer is designed to work on systems that use ALSA for sound management.
+ Any other sound driver like OSS or FFADO, or sound server like PulseAudio
+ or Jack, are currently not supported (patches welcome).

@@ -1,0 +1,20 @@
+pnmixer (0.7-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Remove deprecated gnome-common macros/variables. Closes: #929881.
+    - Resize icons in menu. Closes: #816124.
+  * Remove manual page (now shipped by upstream).
+  * Bump Gtk+ required version to 3.12.
+  * Bump Standards-Version to 3.9.8.
+  * Build with hardening build flags.
+  * Use https in Vcs-* fields.
+  * Update watchfile to version 4.
+  * Fix typo in copyright.
+
+ -- Arnaud Rebillout <elboulangero@gmail.com>  Wed, 21 Sep 2016 09:34:35 +0700
+
+pnmixer (0.6.1-1) unstable; urgency=low
+
+  * Initial release. Closes: #745669.
+
+ -- Arnaud Rebillout <elboulangero@gmail.com>  Sun, 06 Dec 2015 19:18:02 +0700
